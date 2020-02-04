@@ -12,3 +12,8 @@ test('renders learn react link', () => {
 test('True is truthy', () => {
   expect(true).toBe(true)
 })
+
+
+test('False is falsy', () => {
+  expect(false).toBe(false)
+})
