@@ -7,3 +7,8 @@ test('renders learn react link', () => {
   const linkElement = getByText(/learn react/i)
   expect(linkElement).toBeInTheDocument()
 })
+
+
+test('True is truthy', () => {
+  expect(true).toBe(true)
+})
