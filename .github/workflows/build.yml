@@ -28,6 +28,6 @@ jobs:
 
     - uses: 5monkeys/cobertura-action@master
       with:
-        path: src/test.xml
+        path: src/clover.xml
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         minimum_coverage: 75
