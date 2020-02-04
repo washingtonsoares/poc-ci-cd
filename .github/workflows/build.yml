@@ -1,8 +1,6 @@
 name: Node.js CI
 
-on:
-  pull_request:
-    types: [opened]
+on: [push]
 
 jobs:
   build:
@@ -28,6 +26,6 @@ jobs:
 
     - uses: 5monkeys/cobertura-action@master
       with:
-        path: src/clover.xml
+        path: coverage/clover.xml
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         minimum_coverage: 75
