@@ -58,9 +58,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test": "NODE_PATH=$(pwd)/src jest",
+    "test:watch": "npm run test --watch",
+    "test:coverage": "npm run test --coverage",
     "eslint": "eslint 'src/**/*.{js,jsx}' --ignore-pattern *.spec.js --quiet"
   },
   "eslintConfig": {
