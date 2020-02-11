@@ -58,6 +58,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "jest": "npx jest --coverage",
     "test": "NODE_PATH=$(pwd)/src jest",
     "test:watch": "npm run test --watch",
     "test:coverage": "npm run test -- --coverage",
