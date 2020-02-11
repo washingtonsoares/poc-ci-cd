@@ -21,7 +21,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm run eslint
 
-    - uses: washingtonsoares/jest-reporter-action@v0.0.3
+    - uses: washingtonsoares/jest-reporter-action@v0.0.4
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        test-command: "yarn test:coverage"
+        test-command: "npx jest --coverage"
