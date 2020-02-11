@@ -22,6 +22,6 @@ jobs:
     - run: npm run eslint
     - run: npm run test:coverage
 
-    - uses: ziishaned/jest-reporter-action@v0.0.1
+    - uses: ChristiaanScheermeijer/jest-reporter-action@v0.4.0
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
