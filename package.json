@@ -58,6 +58,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "jest": "npx jest --coverage",
     "test": "NODE_PATH=$(pwd)/src jest",
     "test:watch": "npm run test --watch",
     "test:coverage": "npm run test -- --coverage",
@@ -126,7 +127,15 @@
     "watchPlugins": [
       "jest-watch-typeahead/filename",
       "jest-watch-typeahead/testname"
-    ]
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
   },
   "babel": {
     "presets": [
