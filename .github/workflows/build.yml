@@ -23,5 +23,6 @@ jobs:
     - run: npm run test:coverage
 
     - uses: washingtonsoares/jest-reporter-action@v0.0.1
+    - name: Test Coverage
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
